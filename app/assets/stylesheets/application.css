@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.container {
+    position: relative;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+.checkbox {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.marked {
+    opacity: 50%;
+}
+
+.delete-warning {
+    visibility: hidden;
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    font-size: xxx-large;
+}
+.delete-warning.marked {
+    opacity: 100%;
+    visibility: visible;
+    color: #B00100;
+    background-color: white;
+}
